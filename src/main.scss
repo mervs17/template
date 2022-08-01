@@ -95,11 +95,11 @@ p {
 .button {
   @apply w-[115px] max-w-full h-[34px] flex items-center justify-center space-x-2 rounded-md font-medium text-sm;
 
-  &.--email {
+  &--email {
     @apply bg-white text-[#374151] border border-solid border-[#D1D5DB] transition hover:text-white hover:bg-[#374151];
   }
 
-  &.--linkedin {
+  &--linkedin {
     @apply bg-[#5093E2] border border-solid border-[#5093E2] hover:border-[#D1D5DB] text-white transition hover:text-[#5093E2] hover:bg-white;
   }
 }
@@ -113,30 +113,26 @@ p {
 
 .card {
   @apply max-w-full w-[317px] mx-auto;
-}
-
-.card__header {
-  @apply text-center bg-[#F5F5F5] dark:bg-[#1A1B21] pt-5 pb-4 sm:px-8 px-5;
-}
-
-.card__body {
-  @apply pb-5 sm:px-9 px-5 bg-[#F5F5F5] dark:bg-[#1A1B21];
-}
-
-.card__body__content {
-  @apply pt-8 pb-5;
-}
-
-.card__footer {
-  @apply bg-[#D5D4D8] dark:bg-[#161619] py-4 px-5 rounded-b-[10px];
-
-  > ul {
-    @apply flex flex-wrap items-center justify-center space-x-5;
+  &__header {
+    @apply text-center bg-[#F5F5F5] dark:bg-[#1A1B21] pt-5 pb-4 sm:px-8 px-5;
   }
-}
+  &__body {
+    @apply pb-5 sm:px-9 px-5 bg-[#F5F5F5] dark:bg-[#1A1B21];
+    &__content {
+      @apply pt-8 pb-5;
+    }
+  }
+  &__footer {
+    @apply bg-[#D5D4D8] dark:bg-[#161619] py-4 px-5 rounded-b-[10px];
 
-.card__footer__icon {
-  @apply md:text-2xl text-xl text-[#918E9B] transition duration-200 hover:text-primary;
+    > ul {
+      @apply flex flex-wrap items-center justify-center space-x-5;
+    }
+    
+    &__icon {
+      @apply md:text-2xl text-xl text-[#918E9B] transition duration-200 hover:text-primary;
+    }
+  }
 }
 
 /*------------------------------------*\

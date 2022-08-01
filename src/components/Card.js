@@ -29,14 +29,14 @@ export default function Card() {
         <div className="sm:flex-row flex-col flex items-center justify-center sm:space-x-4 sm:space-y-0 space-y-3">
           <button
             onClick={() => openSelf("mailto:")}
-            className="button --email"
+            className="button button--email"
           >
             <FontAwesomeIcon icon={solid("envelope")} className="text-base" />
             <span>Email</span>
           </button>
           <button
             onClick={() => openInNewTab("https://linkedin.com")}
-            className="button --linkedin"
+            className="button button--linkedin"
           >
             <FontAwesomeIcon icon={brands("linkedin")} className="text-base" />
             <span>LinkedIn</span>

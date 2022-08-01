@@ -42,7 +42,7 @@ export default function Card() {
             <span>LinkedIn</span>
           </button>
         </div>
-        <div className="card__body__content">
+        <div className="card__content">
           <h3>About</h3>
           <p className="text-[10px] dark:text-[#DCDCDC] leading-4 mb-5">
             I am a frontend developer with a particular interest in making
@@ -64,7 +64,7 @@ export default function Card() {
             <a href="https://www.twitter.com/" target={blank}>
               <FontAwesomeIcon
                 icon={brands("twitter-square")}
-                className="card__footer__icon"
+                className="card__icon"
               />
             </a>
           </li>
@@ -72,7 +72,7 @@ export default function Card() {
             <a href="https://www.facebook.com/" target={blank}>
               <FontAwesomeIcon
                 icon={brands("facebook-square")}
-                className="card__footer__icon"
+                className="card__icon"
               />
             </a>
           </li>
@@ -80,7 +80,7 @@ export default function Card() {
             <a href="https://www.instagram.com/" target={blank}>
               <FontAwesomeIcon
                 icon={brands("instagram-square")}
-                className="card__footer__icon"
+                className="card__icon"
               />
             </a>
           </li>
@@ -88,7 +88,7 @@ export default function Card() {
             <a href="https://www.github.com/" target={blank}>
               <FontAwesomeIcon
                 icon={brands("github-square")}
-                className="card__footer__icon"
+                className="card__icon"
               />
             </a>
           </li>

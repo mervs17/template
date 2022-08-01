@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*------------------------------------*\
+  #FONTS -- START
+\*------------------------------------*/
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("./fonts/FiraCode-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("./fonts/FiraCode-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+/*------------------------------------*\
+  #FONTS -- END
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #GLOBAL -- START
+\*------------------------------------*/
+
+body {
+  @apply font-inter break-words bg-white text-dark-color-2 dark:bg-dark-color-2 dark:text-white;
+}
+
+main {
+  @apply bg-react-logo bg-no-repeat bg-right;
+}
+
+h1 {
+  @apply font-bold lg:text-5xl md:text-4xl text-3xl;
+}
+
+h2 {
+  @apply font-bold md:text-2xl text-xl text-[#2B283A] dark:text-white;
+}
+
+h3 {
+  @apply font-bold text-base;
+}
+
+p {
+  @apply lg:text-2xl md:text-xl text-lg;
+}
+/*------------------------------------*\
+  #GLOBAL -- END
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #FOR MEDIA QUERIES TAILWINDCSS -- START
+\*------------------------------------*/
+/*@layer utilities {
+}*/
+
+/*------------------------------------*\
+  #FOR MEDIA QUERIES TAILWINDCSS -- END
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #BACKGROUND IMAGES -- START
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #BACKGROUND IMAGES -- END
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #UNORDERED LIST -- START
+\*------------------------------------*/
+
+.ul-disc {
+  @apply text-base sm:pl-5 py-5 space-y-3;
+
+  > li {
+    @apply relative pl-5;
+    &:before {
+      @apply content-[''] absolute left-0 top-2 bg-react-blue w-[9.61px] h-[9.61px] rounded-full;
+    }
+  }
+}
+/*------------------------------------*\
+  #UNORDERED LIST -- END
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #BUTTONS -- START
+\*------------------------------------*/
+
+.button {
+  @apply w-[115px] max-w-full h-[34px] flex items-center justify-center space-x-2 rounded-md font-medium text-sm;
+
+  &.--email {
+    @apply bg-white text-[#374151] border border-solid border-[#D1D5DB] transition hover:text-white hover:bg-[#374151];
+  }
+
+  &.--linkedin {
+    @apply bg-[#5093E2] border border-solid border-[#5093E2] hover:border-[#D1D5DB] text-white transition hover:text-[#5093E2] hover:bg-white;
+  }
+}
+/*------------------------------------*\
+  #BUTTONS -- END
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #CARD -- START
+\*------------------------------------*/
+
+.card {
+  @apply max-w-full w-[317px] mx-auto;
+}
+
+.card__header {
+  @apply text-center bg-[#F5F5F5] dark:bg-[#1A1B21] pt-5 pb-4 sm:px-8 px-5;
+}
+
+.card__body {
+  @apply pb-5 sm:px-9 px-5 bg-[#F5F5F5] dark:bg-[#1A1B21];
+}
+
+.card__body__content {
+  @apply pt-8 pb-5;
+}
+
+.card__footer {
+  @apply bg-[#D5D4D8] dark:bg-[#161619] py-4 px-5 rounded-b-[10px];
+
+  > ul {
+    @apply flex flex-wrap items-center justify-center space-x-5;
+  }
+}
+
+.card__footer__icon {
+  @apply md:text-2xl text-xl text-[#918E9B] transition duration-200 hover:text-primary;
+}
+
+/*------------------------------------*\
+  #CARD -- END
+\*------------------------------------*/

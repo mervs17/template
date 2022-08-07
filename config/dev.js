@@ -10,6 +10,7 @@ module.exports = merge(common, {
     static: path.resolve(__dirname, "../dist"),
     compress: true,
     port: 80,
+    open: true,
   },
   plugins: [
     new HtmlWebPackPlugin({

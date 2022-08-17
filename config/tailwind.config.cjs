@@ -17,8 +17,11 @@ module.exports = {
       },
       fontFamily: {
         arial: ["Arial", "sans-serif"],
-        fira: ["Fira Code", "san-serif"],
         inter: ["Inter", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
+      boxShadow: {
+        toggle: "inset 4.5px 0px 0px 0px #ffffff",
       },
       dropShadow: {
         "3xl": "0 0 70px rgba(0, 0, 0, 1)",
@@ -30,6 +33,7 @@ module.exports = {
       backgroundImage: {
         logo: "url('./images/react-logo.png')",
         "react-logo": "url('./images/reactjs-icon-2.png')",
+        "react-logo-white": "url('./images/reactjs-icon-2-white.png')",
       },
       keyframes: {
         slideWidth: {

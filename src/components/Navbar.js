@@ -1,5 +1,5 @@
 import React from "react";
-import DarkMode from "./DarkMode";
+import ToggleDarkMode from "./ToggleDarkMode";
 
 const logo = new URL("../images/reactjs-icon.png", import.meta.url);
 
@@ -14,10 +14,7 @@ export default function Navbar() {
           </span>
         </div>
         <div className="flex flex-wrap items-center space-x-4">
-          <p className="font-semibold text-base text-tertiary">
-            React Course - Project 1
-          </p>
-          <DarkMode />
+          <ToggleDarkMode />
         </div>
       </nav>
     </header>

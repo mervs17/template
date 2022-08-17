@@ -2,7 +2,6 @@ import "./main.scss";
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import "flowbite";
 
 if (process.env.NODE_ENV !== "production") {
   const style = [

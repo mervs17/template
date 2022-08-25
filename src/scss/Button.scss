@@ -1,0 +1,18 @@
+/*------------------------------------*\
+  #BUTTONS -- START
+\*------------------------------------*/
+
+.Button {
+  @apply w-[115px] max-w-full h-[34px] flex items-center justify-center space-x-2 rounded-md font-medium text-sm;
+
+  &--Email {
+    @apply bg-white text-[#374151] border border-solid border-[#D1D5DB] transition hover:text-white hover:bg-[#374151];
+  }
+
+  &--Linkedin {
+    @apply bg-[#5093E2] border border-solid border-[#5093E2] hover:border-[#D1D5DB] text-white transition hover:text-[#5093E2] hover:bg-white;
+  }
+}
+/*------------------------------------*\
+  #BUTTONS -- END
+\*------------------------------------*/

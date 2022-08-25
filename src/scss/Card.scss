@@ -1,0 +1,39 @@
+/*------------------------------------*\
+  #CARD -- START
+\*------------------------------------*/
+
+.Card {
+  @apply max-w-full w-[317px] mx-auto;
+
+  &__Header {
+    @apply text-center bg-[#F5F5F5] dark:bg-[#1A1B21] pt-5 pb-4 sm:px-8 px-5;
+  }
+
+  &__Body {
+    @apply pb-5 sm:px-9 px-5 bg-[#F5F5F5] dark:bg-[#1A1B21];
+  }
+
+  &__Content {
+    @apply pt-8 pb-5;
+  }
+
+  &__Paragraph {
+    @apply text-[10px] dark:text-[#DCDCDC] leading-4 mb-5;
+  }
+
+  &__Footer {
+    @apply bg-[#D5D4D8] dark:bg-[#161619] py-4 px-5 rounded-b-[10px];
+
+    > ul {
+      @apply flex flex-wrap items-center justify-center space-x-5;
+    }
+  }
+
+  &__Icon {
+    @apply md:text-2xl text-xl text-[#918E9B] transition duration-200 hover:text-primary;
+  }
+}
+
+/*------------------------------------*\
+  #CARD -- END
+\*------------------------------------*/

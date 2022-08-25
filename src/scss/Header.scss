@@ -1,0 +1,71 @@
+/*------------------------------------*\
+  #HEADER -- START
+\*------------------------------------*/
+
+.Header {
+  @apply bg-slate-500 dark:bg-secondary px-6 py-8;
+
+  &__Nav {
+    @apply xl:max-w-screen-xl container mx-auto sm:flex sm:space-y-0 space-y-2 justify-between;
+  }
+
+  &__Logo-Wrapper {
+    @apply flex items-center space-x-2;
+  }
+
+  &__Logo-Name {
+    @apply md:text-[22.25px] text-lg text-react-blue font-bold tracking-tighter;
+  }
+
+  &__Toggle {
+    @apply flex flex-wrap items-center space-x-4;
+  }
+}
+
+/*------------------------------------*\
+  #HEADER -- END
+\*------------------------------------*/
+
+/*------------------------------------*\
+  #TOGGLE SWITCH -- START
+\*------------------------------------*/
+.Toggle {
+  @apply flex items-center space-x-2;
+
+  &__Text {
+    @apply font-poppins text-xs font-semibold;
+  }
+
+  &--Light {
+    @apply text-[#2B283A] dark:text-[#918E9B];
+  }
+
+  & #toggleSwitch {
+    @apply relative cursor-pointer w-7 h-3.5 rounded-full;
+    &:before {
+      @apply transition-all duration-300 content-[''] absolute w-3 h-3 rounded-full top-1/2 -translate-y-1/2;
+    }
+  }
+
+  &__Switch--Light {
+    @apply bg-[#2B283A];
+    &:before {
+      @apply shadow-toggle bg-[#2B283A] left-[3px] translate-x-0;
+    }
+  }
+
+  &__Switch--Dark {
+    @apply bg-white;
+    &:before {
+      @apply shadow-none bg-[#222222] left-auto translate-x-[14px];
+    }
+  }
+
+  &--Dark {
+    @apply text-[#D5D4D8] dark:text-white;
+  }
+}
+
+/*------------------------------------*\
+  #TOGGLE SWITCH -- END
+\*------------------------------------*/

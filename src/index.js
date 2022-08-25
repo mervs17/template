@@ -15,28 +15,27 @@ if (process.env.NODE_ENV !== "production") {
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
-var themeToggleDarkIcon = document.getElementsByClassName(
-  "Toggle__switch--dark"
-)[0];
-var themeToggleLightIcon = document.getElementsByClassName(
-  "Toggle__switch--light"
-)[0];
+const toggleDark = "Toggle__Switch--Dark";
+const toggleLight = "Toggle__Switch--Light";
+
+var themeToggleDarkIcon = document.getElementsByClassName(toggleDark)[0];
+var themeToggleLightIcon = document.getElementsByClassName(toggleLight)[0];
 
 if (
   localStorage.getItem("color-theme") === "dark" ||
   (!("color-theme" in localStorage) &&
     window.matchMedia("(prefers-color-scheme: dark)").matches)
 ) {
-  themeToggleLightIcon.classList.remove("Toggle__switch--light");
+  themeToggleLightIcon.classList.remove(toggleLight);
 } else {
-  themeToggleDarkIcon.classList.remove("Toggle__switch--dark");
+  themeToggleDarkIcon.classList.remove(toggleDark);
 }
 
 var themeToggleBtn = document.getElementById("toggleSwitch");
 
 themeToggleBtn.addEventListener("click", function () {
-  themeToggleDarkIcon.classList.toggle("Toggle__switch--dark");
-  themeToggleLightIcon.classList.toggle("Toggle__switch--light");
+  themeToggleDarkIcon.classList.toggle(toggleDark);
+  themeToggleLightIcon.classList.toggle(toggleLight);
 
   if (localStorage.getItem("color-theme")) {
     if (localStorage.getItem("color-theme") === "light") {

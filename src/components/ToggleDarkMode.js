@@ -1,14 +1,15 @@
 import React from "react";
 
 export default function DarkMode() {
+  var toggleS = "Toggle__Switch";
   return (
     <div className="Toggle">
-      <p className="Toggle__text Toggle--light">Light</p>
+      <p className="Toggle__Text Toggle--Light">Light</p>
       <div
         id="toggleSwitch"
-        className="Toggle__switch--light Toggle__switch--dark"
+        className={`${toggleS}--Light Toggle__Switch--Dark`}
       ></div>
-      <p className="Toggle__text Toggle--dark">Dark</p>
+      <p className="Toggle__Text Toggle--Dark">Dark</p>
     </div>
   );
 }

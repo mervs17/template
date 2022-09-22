@@ -40,7 +40,7 @@
     @apply text-[#2B283A] dark:text-[#918E9B];
   }
 
-  & #toggleSwitch {
+  &__Switch {
     @apply relative cursor-pointer w-7 h-3.5 rounded-full;
     &:before {
       @apply transition-all duration-300 content-[''] absolute w-3 h-3 rounded-full top-1/2 -translate-y-1/2;

@@ -3,13 +3,13 @@ import React from "react";
 export default function IntroContent() {
   return (
     <div className="container xl:max-w-screen-xl mx-auto">
-      <h1>Fun Facts about React</h1>
+      <h1>Lorem Ipsum</h1>
       <ul className="ul-disc">
-        <li>Was first released in 2013</li>
-        <li>Was originally created by Jordan Walke</li>
-        <li>Has well over 100k stars on GitHub</li>
-        <li>Is maintained by Facebook</li>
-        <li>Powers thousands of enterprise apps, including mobile apps</li>
+        <li>Sed porttitor lectus nibh. </li>
+        <li>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</li>
+        <li>Nulla quis lorem ut libero malesuada feugiat.</li>
+        <li>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</li>
+        <li>Vivamus suscipit tortor eget felis porttitor volutpat.</li>
       </ul>
     </div>
   );

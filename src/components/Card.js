@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
-const laura = new URL("../images/laura-smith.png", import.meta.url);
+const laura = new URL("../assets/images/laura-smith.png", import.meta.url);
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noopener, noreferrer");
 };
@@ -55,7 +55,6 @@ export default function Card() {
           </p>
         </div>
       </div>
-
       <div className="Card__Footer">
         <ul>
           <li>

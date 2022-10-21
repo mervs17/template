@@ -3,10 +3,10 @@
 \*------------------------------------*/
 
 .Header {
-  @apply bg-slate-500 dark:bg-secondary px-6 py-8;
+  @apply bg-slate-500 dark:bg-secondary px-6 sm:py-8 py-5 relative;
 
   &__Nav {
-    @apply xl:max-w-screen-xl container mx-auto sm:flex sm:space-y-0 space-y-2 justify-between;
+    @apply xl:max-w-screen-xl container mx-auto flex flex-wrap justify-between;
   }
 
   &__Logo-Wrapper {
@@ -14,11 +14,37 @@
   }
 
   &__Logo-Name {
-    @apply md:text-[22.25px] text-lg text-react-blue font-bold tracking-tighter;
+    @apply sr-only;
   }
 
   &__Toggle {
-    @apply flex flex-wrap items-center space-x-4;
+    @apply flex flex-wrap items-center space-x-4 sm:flex-row flex-row-reverse;
+  }
+
+  &__Hamburger {
+    @apply inline-flex items-center p-2 ml-3 text-sm text-gray-900 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600;
+  }
+
+  &__NavLink {
+    @apply hidden w-full sm:block sm:w-auto;
+
+    &.show {
+      @apply block absolute top-[79px] right-0 text-center py-5 px-2 bg-gray-500 dark:bg-gray-800 shadow-md sm:shadow-none;
+    }
+
+    ul {
+      @apply sm:flex sm:flex-row sm:space-y-0 space-y-2 sm:space-x-4 flex-col sm:text-sm text-base tracking-wide text-white;
+    }
+
+    a {
+      @apply transition;
+      // HOVER
+      @apply hover:text-primary;
+
+      &.active {
+        @apply text-primary;
+      }
+    }
   }
 }
 

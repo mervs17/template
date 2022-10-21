@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: "Fira Code";
-  src: url("./fonts/FiraCode-Regular.ttf") format("truetype");
+  src: url("./assets/fonts/FiraCode-Regular.ttf") format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Fira Code";
-  src: url("./fonts/FiraCode-Bold.ttf") format("truetype");
+  src: url("./assets/fonts/FiraCode-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 /*------------------------------------*\
@@ -23,10 +23,6 @@
 
 body {
   @apply font-inter break-words bg-white text-dark-color-2 dark:bg-dark-color-2 dark:text-white;
-}
-
-main {
-  @apply bg-react-logo bg-no-repeat bg-right;
 }
 
 h1 {
@@ -43,6 +39,10 @@ h3 {
 
 p {
   @apply lg:text-2xl md:text-xl text-lg;
+}
+
+#root {
+  @apply relative min-h-screen;
 }
 /*------------------------------------*\
   #GLOBAL -- END
@@ -76,7 +76,7 @@ p {
   > li {
     @apply relative pl-5;
     &:before {
-      @apply content-[''] absolute left-0 top-2 bg-react-blue w-[9.61px] h-[9.61px] rounded-full;
+      @apply content-[''] absolute left-0 top-2 bg-custom-blue w-[9.61px] h-[9.61px] rounded-full;
     }
   }
 }

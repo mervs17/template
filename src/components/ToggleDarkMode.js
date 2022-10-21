@@ -5,7 +5,7 @@ export default function DarkMode() {
   const toggleS = "Toggle__Switch";
 
   const [darkMode, setDarkMode] = useState(
-    () => JSON.parse(localStorage.getItem("site-dark-mode")) || false
+    () => JSON.parse(localStorage.getItem("site-dark-mode")) || true
   );
 
   useEffect(() => {

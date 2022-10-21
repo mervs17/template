@@ -4,9 +4,9 @@
 @use "tailwindcss/utilities";
 
 // MAIN STYLES
-@use "./scss/_styles";
-@use "./scss/Button.scss";
+@use "./assets/scss/_styles";
+@use "./assets//scss/Button.scss";
 
 // COMPONENTS
-@use "./scss/Card.scss";
-@use "./scss/Header.scss";
+@use "./assets/scss/Card.scss";
+@use "./assets/scss/Header.scss";

@@ -13,5 +13,9 @@ if (process.env.NODE_ENV !== "production") {
   console.log("%cLooks like we are in development mode!", style.join(";"));
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
-
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);

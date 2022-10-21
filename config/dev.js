@@ -11,6 +11,8 @@ module.exports = merge(common, {
     compress: true,
     port: 80,
     open: true,
+    historyApiFallback: true,
+    watchFiles: path.resolve(__dirname, "../src"),
   },
   plugins: [
     new HtmlWebPackPlugin({

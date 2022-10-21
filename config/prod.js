@@ -5,6 +5,7 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 var filePath = {
   js: "js/[name].bundle.js",
@@ -13,7 +14,7 @@ var filePath = {
 
 module.exports = merge(common, {
   mode: "production",
-  devtool: "source-map",
+  devtool: "inline-source-map",
   output: {
     filename: filePath.js,
     path: path.resolve(__dirname, "../dist/assets"),

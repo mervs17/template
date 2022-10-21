@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#00D8FF",
+        primary: "#29aae1",
         secondary: "#21222A",
-        "react-blue": "#61DAFB",
+        "custom-blue": "#61DAFB",
         tertiary: "#DEEBF8",
         "dark-color": "#33373E",
         "dark-color-2": "#282D35",
@@ -32,7 +32,7 @@ module.exports = {
       },
       backgroundImage: {
         logo: "url('./images/react-logo.png')",
-        "react-logo": "url('./images/reactjs-icon-2.png')",
+        "react-logo": "url('./assets/images/reactjs-icon-2.png')",
         "react-logo-white": "url('./images/reactjs-icon-2-white.png')",
       },
       keyframes: {
@@ -55,4 +55,5 @@ module.exports = {
       },
     },
   },
+  plugins: [require("flowbite/plugin")],
 };

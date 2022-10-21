@@ -5,17 +5,17 @@ export default function DarkMode() {
   const toggleS = "Toggle__Switch";
 
   const [darkMode, setDarkMode] = useState(
-    () => JSON.parse(localStorage.getItem("site-dark-mode")) || true
+    () => JSON.parse(localStorage.getItem("site-light-mode")) || false
   );
 
   useEffect(() => {
-    if (darkMode) {
+    if (!darkMode) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
     const json = JSON.stringify(darkMode);
-    localStorage.setItem("site-dark-mode", json);
+    localStorage.setItem("site-light-mode", json);
     console.log("Dark Mode:", darkMode);
   }, [darkMode]);
 
@@ -26,7 +26,7 @@ export default function DarkMode() {
         onClick={() => setDarkMode((prevDarkMode) => !prevDarkMode)}
         className={classNames(
           toggleS,
-          !darkMode ? `${toggleS}--Light` : `${toggleS}--Dark`
+          darkMode ? `${toggleS}--Light` : `${toggleS}--Dark`
         )}
       ></div>
       <p className="Toggle__Text Toggle--Dark">Dark</p>

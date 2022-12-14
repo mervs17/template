@@ -1,0 +1,12 @@
+/* TAILWIND CSS */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* MAIN STYLES */
+@import "./assets/css/styles";
+@import "./assets/css/Button";
+
+/* COMPONENTS */
+@import "./assets/css/Card";
+@import "./assets/css/Header";

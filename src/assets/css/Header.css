@@ -38,7 +38,7 @@
 
     a {
       @apply transition;
-      // HOVER
+      /* HOVER */
       @apply hover:text-primary;
 
       &.active {

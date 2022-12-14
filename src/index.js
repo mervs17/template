@@ -1,6 +1,6 @@
-import "./main.scss";
+import "./main.css";
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 import App from "./App";
 
 if (process.env.NODE_ENV !== "production") {
@@ -13,9 +13,10 @@ if (process.env.NODE_ENV !== "production") {
   console.log("%cLooks like we are in development mode!", style.join(";"));
 }
 
-ReactDOM.render(
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
